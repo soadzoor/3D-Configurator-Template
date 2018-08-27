@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: none;
+	text-decoration: none;
+	font-style: normal;
+	color: white;
+	box-sizing: border-box;
+	font-family: Roboto, sans-serif;
+}
+
+html {
+	height: 100%;
+	position: fixed;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	text-transform: uppercase;
+	border-bottom: 1px solid lightgrey;
+	text-align: center;
+	font-size: 14px;
+}
+
+#materialTweaker {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#materialTweaker ul {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#materialTweaker li {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+	border-radius: 999px;
+	cursor: pointer;
+	border: 1px solid #010101;
+	background-position: center center;
+	background-size: contain;
+}
+
+#materialTweaker li.active {
+	border-width: 2px;
+}
+
+.black {
+	background-color: #303030;
+}
+
+.red {
+	background-color: #DC143C;
+}
+
+.blue {
+	background-color: #4682B4;
+}
+
+.grey {
+	background-color: lightgray;
+}
+
+main {
+	background-color: #cccccc;
+	flex: 1;
+	display: flex;
+	touch-action: none;
+}
+
+canvas {
+	touch-action: none;
+}
+
+#loadingScreen {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #FFFFFF;
+	/*background-image: url("../assets/img/loading_bg.jpg");
+	background-size: cover;
+	background-position: center center;*/
+	z-index: 1001;
+	transition: 0.5s opacity ease-in-out;
+}
+
+#loadingBarBackground {
+	background-color: #999999;
+	margin: 0 auto;
+	border-radius: 4px;
+	margin-top: 20px;
+	width: 80%;
+	max-width: 500px;
+	height: 25px;
+}
+
+#loadingBar {
+	background-color: cadetblue;
+	display: block;
+	width: 0;
+	height: 100%;
+	border-radius: 4px;
+}
+
+#loadingPercent {
+	text-align: center;
+	position: relative;
+	bottom: 20px;
+}
+
+#loadingPercent::after {
+	content: ' %';
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+	transition: left 0.4s ease-in-out;
+}
+
+footer div {
+	width: 100%;
+	height: 70px;
+	margin-left: auto;
+	margin-right: auto;
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height">
+		<title>3D Configurator</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+	</head>
+	<body>
+		<div id="loadingScreen">
+			<div id="loadingBarBackground">
+				<div id="loadingBar"></div>
+				<div id="loadingPercent">0</div>
+			</div>
+		</div>
+		<main id="playGround">
+			<canvas id="myCanvas"></canvas>
+			<div id="materialTweaker">
+				<h2>Color1:</h2>
+				<ul id="color1">
+					<li id="color1_black" class="black active" color="789516"></li>
+					<li id="color1_red" class="red" color="14423100"></li>
+					<li id="color1_blue" class="blue" color="4620980"></li>
+				</ul>
+				<h2>Color2:</h2>
+				<ul id="color2">
+					<li id="color2_black" class="black active" color="789516"></li>
+					<li id="color2_red" class="red" color="14423100"></li>
+					<li id="color2_blue" class="blue" color="4620980"></li>
+				</ul>
+				<h2>Rim Type:</h2>
+				<ul id="rimTypes">
+					<li id="rim_default" class="grey active"></li>
+					<li id="rim_zenvo" class="black"></li>
+				</ul>
+			</div>
+		</main>
+
+
+
+
+		<script src="js/app.js"></script>
+	</body>
+</html>
